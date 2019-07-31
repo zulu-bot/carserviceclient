@@ -68,7 +68,6 @@ export class OwnersListComponent implements OnInit {
                 car.ownerDni = "";
                 this.carService.save(car).subscribe(result => {
                   console.log("carro modif", car);
-                  
                 }, error => console.error(error));
               }
             }
